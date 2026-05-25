@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RetroStrike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="arcade-machine">
+
+        <!-- Top panel with title -->
+        <div class="arcade-top">
+            <div class="marquee">
+                <span class="marquee-text">⚡ RETROSTRIKE ⚡</span>
+            </div>
+            <div class="marquee-lights">
+                <span class="light"></span>
+                <span class="light"></span>
+                <span class="light"></span>
+                <span class="light"></span>
+                <span class="light"></span>
+                <span class="light"></span>
+                <span class="light"></span>
+                <span class="light"></span>
+            </div>
+            <!-- Scrolling ticker -->
+            <div class="ticker-wrap">
+                <div class="ticker">
+                    <span>★ DODGE ALL ENEMIES ★ PRESS ENTER TO SHOOT ★ SURVIVE AS LONG AS YOU CAN ★ BOSS APPEARS EVERY 3 LEVELS ★ COLLECT POWER UPS ★ BEAT YOUR HIGH SCORE ★ GOOD LUCK WARRIOR ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>★ DODGE ALL ENEMIES ★ PRESS ENTER TO SHOOT ★ SURVIVE AS LONG AS YOU CAN ★ BOSS APPEARS EVERY 3 LEVELS ★ COLLECT POWER UPS ★ BEAT YOUR HIGH SCORE ★ GOOD LUCK WARRIOR ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle section -->
+        <div class="arcade-middle">
+
+            <!-- Left panel -->
+            <div class="side-panel left-panel">
+                <div class="panel-text">WASD</div>
+                <div class="panel-subtext">MOVE</div>
+                <div class="joystick-graphic">🕹️</div>
+                <div class="panel-text" style="margin-top: 30px;">ENTER</div>
+                <div class="panel-subtext">SHOOT</div>
+                <div class="panel-text" style="margin-top: 30px;">R KEY</div>
+                <div class="panel-subtext">RESTART</div>
+
+                <!-- Side art — warrior silhouette -->
+                <div class="side-art">
+                    <div class="warrior">
+                        <div class="w-head"></div>
+                        <div class="w-body"></div>
+                        <div class="w-sword"></div>
+                        <div class="w-leg w-leg-left"></div>
+                        <div class="w-leg w-leg-right"></div>
+                    </div>
+                </div>
+
+                <div class="circuit-line"></div>
+                <div class="circuit-line"></div>
+            </div>
+
+            <!-- Game screen -->
+            <div class="screen-wrapper">
+                <div class="screen-bezel">
+                    <canvas id="gameCanvas"></canvas>
+                </div>
+            </div>
+
+            <!-- Right panel -->
+            <div class="side-panel right-panel">
+                <div class="panel-text">ENEMIES</div>
+                <div class="panel-subtext">DESTROY</div>
+                <div class="panel-text" style="margin-top: 30px;">DODGE</div>
+                <div class="panel-subtext">OR DIE</div>
+                <div class="panel-text" style="margin-top: 30px;">SURVIVE</div>
+                <div class="panel-subtext">IF U CAN</div>
+
+                <!-- Side art — enemy shapes -->
+                <div class="side-art">
+                    <div class="enemy-art">
+                        <div class="e-shape e1"></div>
+                        <div class="e-shape e2"></div>
+                        <div class="e-shape e3"></div>
+                    </div>
+                </div>
+
+                <div class="circuit-line"></div>
+                <div class="circuit-line"></div>
+            </div>
+
+        </div>
+
+        <!-- Control panel -->
+        <div class="control-panel">
+            <div class="control-section">
+                <div class="key-group">
+                    <div class="key-row">
+                        <div class="key">W</div>
+                    </div>
+                    <div class="key-row">
+                        <div class="key">A</div>
+                        <div class="key">S</div>
+                        <div class="key">D</div>
+                    </div>
+                    <div class="key-label">MOVE</div>
+                </div>
+            </div>
+
+            <div class="control-center">
+                <div class="coin-slot">▶ PRESS F FOR FULLSCREEN ◀</div>
+                <div class="bottom-lights">
+                    <span class="light light-blue"></span>
+                    <span class="light light-pink"></span>
+                    <span class="light light-blue"></span>
+                    <span class="light light-pink"></span>
+                    <span class="light light-blue"></span>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <div class="key-group">
+                    <div class="enter-key">ENTER</div>
+                    <div class="key-label">SHOOT</div>
+                    <div class="r-key">R</div>
+                    <div class="key-label">RESTART</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
